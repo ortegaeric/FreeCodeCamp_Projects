@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: inherit;
+  background: url(https://images.pexels.com/photos/5676668/pexels-photo-5676668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) hsla(230, 50%, 60%, 0.5) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+/*   filter: blur(1px);
+  transform: scale(1.1); */
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 65px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+header p {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 10px 0px 30px 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: hsla(250, 60%, 12%, 0.9);
+  height: 100%;
+  width: 60%;
+  padding: 50px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+select,
+textarea,
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+label,
+form input[type="radio"],
+form input[type="checkbox"] {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 0px;
+  line-height: 1.2;
+}
+
+form select {
+  font-size: 16px;
+  appearance: none;
+  padding: 10px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 5px;
+  padding: 10px;
+}
+
+form input[type="submit"] {
+  background: green;
+  color: white;
+  border-radius: 0px;
+  padding: 15px;
+}
+
+textarea {
+  border-radius: 0px;
+}
+
+

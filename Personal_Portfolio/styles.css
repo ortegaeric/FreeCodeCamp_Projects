@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+@keyframes shift-down {
+    0% {
+        position: relative;
+        top: 0px;
+    }
+
+    100% {
+        position: relative;
+        top: 15px;
+    }
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#Navbar {
+    width: 100%;
+    background-color: darkred;
+    position: fixed;
+    top: 0;
+}
+
+#Navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 28px;
+    list-style: none;
+}
+
+#Navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    color: #fff;
+    font-size: 56px;
+}
+
+#welcome-section h4 {
+    color: darkred;
+    font-size: 28px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#About {
+    height: 100vh;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Projects {
+    height: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Projects h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#Projects button {
+    background-color: #333;
+    padding: 20px 15px 20px 25px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Projects button:hover {
+    color: #fff;
+    background-color: darkred;
+    transition: all .3s ease-in-out;
+}
+
+.icon-arrow {
+    font-size: 28px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.projects a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.project-tile {
+
+}
+
+.project-tile img {
+
+}
+
+.project-tile h3 {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 20px;
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Contact {
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.text {
+    padding: 30px;
+}
+
+.text h2 {
+    font-size: 56px;
+}
+
+.text p {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.contact-links a:hover {
+    animation-name: shift-down;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.icon {
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    height: 10vh;
+    background-color:#333;
+    border-top: 5px solid darkred;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer p {
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+    margin-left: 55px;
+}
+
+#to-top {
+    width: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+#to-top:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 720px) {
+    .video {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video iframe {
+        padding: 15px;
+    }
+
+    .pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 1;
+        margin: 20px auto;
+    }
+
+    .product-price-box {
+        border: 2px solid grey;
+        text-align: center;
+        margin: 10px;
+        width: 70%;
+    }
+    
+    footer {
+        width: 100%;
+    }
+}

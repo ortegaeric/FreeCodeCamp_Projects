@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ff63af8b29.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <main>
+        <nav id="Navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#Projects">Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header id="welcome-section">
+            <h1>Hello, I am Eric</h1>
+            <h4>A Web Developer</h4>
+        </header>
+
+        <!-- <section id="About">
+
+        </section> -->
+
+        <section id="Projects">
+            <h2>These are some of my projects</h2>
+            <section class="projects">
+                <a target="_blank" href="https://codepen.io/HardKnocks/pen/XWrerbP">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Tribute Page</h3>
+                    </section>
+                </a>
+
+                <a target="_blank" href="https://codepen.io/HardKnocks/pen/poperrM">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Survey Form</h3>
+                    </section>
+                </a>
+
+                <a target="_blank" href="https://codepen.io/HardKnocks/pen/NWXvGyR">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Technical Documentation</h3>
+                    </section>
+                </a>
+
+                <a target="_blank" href="https://codepen.io/HardKnocks/pen/KKZqNrz">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Product Landing Page</h3>
+                    </section>
+                </a>
+
+                <a target="_blank" href="#">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Project Title</h3>
+                    </section>
+                </a>
+
+                <a target="_blank" href="#">
+                    <section class="project-tile">
+                        <img src="http://placehold.jp/3d4070/ffffff/300x300.png" alt="">
+                        <h3>Project Title</h3>
+                    </section>
+                </a>
+            </section>
+            <button>Show More<ion-icon class="icon-arrow" name="chevron-forward-outline"></ion-icon></button>
+        </section>
+
+        <section id="Contact">
+            <section class="text">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </section>
+            <section class="contact-links">
+                <a href="#"><ion-icon class="icon" name="logo-facebook"></ion-icon></i>Facebook</a>
+                <a id="profile-link" href="#"><ion-icon class="icon" name="logo-github"></ion-icon>GitHub</a>
+                <a href="#"><ion-icon  class="icon" name="logo-twitter"></ion-icon>Twitter</a>
+                <a href="#"><ion-icon class="icon" name="mail-outline"></ion-icon>Send an Email</a>
+                <a href="#"><ion-icon class="icon" name="call-outline"></ion-icon>Call Me</a>
+            </section>
+        </section>
+
+        <footer>
+            <p>&copy; Eric Ortega 2020</p>
+        </footer>
+        <a id="to-top" href="#top"><i class="to-top fas fa-chevron-up"></i></a>
+    </main>
+    <script>/*Scroll to top when arrow up clicked BEGIN*/
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#to-top').fadeIn();
+            } else {
+                $('#to-top').fadeOut();
+            }
+        });
+        $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+        
+        });
+        /*Scroll to top when arrow up clicked END*/
+    </script>
+    <script>
+        // Smooth Scroll Parameters set speed.
+    const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+    });
+    </script>
+</body>
+</html>
